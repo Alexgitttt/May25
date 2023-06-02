@@ -20,6 +20,8 @@ header {
 }
 
 
+
+
 .header-menu {
    box-sizing: border-box;
 
@@ -35,12 +37,17 @@ header .header-menu ul {
    padding: 0;
 }
 
+.header-hidden-menu {
+   display: none;
+}
+
+
+
 
 section {
    width: 1200px;
    margin: 0 auto;
 }
-
 
 .borsch-1 {
    display: flex;
@@ -203,3 +210,42 @@ section {
    border-top: 1px solid white;
    border-bottom: 1px solid white;
 }
+
+.borsch-5 {
+   width: 850px;
+   margin: 25px auto;
+}
+
+
+
+@media only screen and (min-width: 1025px) {}
+
+
+
+@media only screen and (max-width: 1024px) {
+   .header-hidden-menu {
+      display: block;
+      margin-right: 50px;
+   }
+
+   .logo-and-hidden-menu {
+      display: flex;
+      width: 15%;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   .header-menu {
+      display: none;
+   }
+}
+
+//it'll be done completely on Sunday because of university-exams-ending and my extrawork for students with diploma.
+
+//i reviewed the site of borshch and understand all structure, just need free 4-5 hours to remake the layout, and I'll done it on sunday'
+
+//yes, i know about consequences
+// yes iam ready for a new theme
+// yes, i'll do all tasks even if it's there some new material to learn
+
+// yes i'll be present on th lesson on saturday 10^30
