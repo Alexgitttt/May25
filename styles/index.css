@@ -9,15 +9,12 @@ body {
    background-color: #DC384E;
 }
 
-html {
-   min-width: 100%;
-   border: 1px solid green;
-}
-
-
 .container {
    max-width: 1200px;
    margin: 0 auto;
+   padding-left: 25px;
+   padding-right: 25px;
+   box-sizing: border-box;
 
 }
 
@@ -49,10 +46,7 @@ header .header-menu ul {
    display: none;
 }
 
-
-
 section {
-   /* width: 1200px; */
    margin: 0 auto;
 }
 
@@ -119,7 +113,6 @@ section {
 }
 
 .borsch-2 h2 {
-   width: 700px;
    font-size: 1.8em;
    padding-bottom: 40px;
 }
@@ -142,9 +135,10 @@ section {
 }
 
 .section-3-4 {
-   padding: 100px 0;
+   padding: 100px 10px;
    background-color: #f25570;
    margin: 0 auto;
+   border-radius: 7px;
 }
 
 .borsch-3 {
@@ -155,12 +149,12 @@ section {
 }
 
 .section-3-img {
-   width: 48%;
+   width: 45%;
 }
 
 .section-3-img img {
-   height: 520px;
-   width: 520px;
+   height: 500px;
+   width: 500px;
 }
 
 .section-3-text {
@@ -179,7 +173,6 @@ section {
 
 .borsch-4 {
    margin: 90px auto 0;
-   width: 1000px;
 }
 
 .borsch-4-divs span {
@@ -219,7 +212,7 @@ section {
 }
 
 .borsch-5 {
-   width: 550px;
+   /* max-width: 550px; */
    margin: 25px auto;
    text-align: center;
    padding-top: 5%;
@@ -236,7 +229,7 @@ section {
 .borsch-5-flex {
    display: flex;
    align-items: center;
-   justify-content: center;
+   justify-content: space-evenly;
 }
 
 .borsch-5-p23 {
@@ -249,18 +242,17 @@ section {
    background-color: white;
    color: black;
    border: 1px solid white;
-   width: 40%;
+   width: 25%;
 }
 
 .borsch-5-flex-2 {
    padding: 12px 0px;
    border: 1px solid white;
-   width: 40%;
-   box-sizing: border-box;
+   width: 25%;
 }
 
 .borsch-6 {
-   width: 1100px;
+   align-items: center;
    display: flex;
    justify-content: space-evenly;
 }
@@ -299,7 +291,6 @@ section {
 .item-1-inner img {
    width: 100%;
    height: 100%;
-   object-fit: contain;
 }
 
 .item-1-description {
@@ -333,7 +324,7 @@ section {
 }
 
 .item-1-description-flex-items img {
-   width: 60%;
+   width: 80%;
 }
 
 
@@ -410,10 +401,11 @@ section {
 
 .borshch-8-flex-box div {
    width: 30%;
+   overflow: hidden;
 }
 
 .borshch-8-flex-box img {
-   width: 340px;
+   max-width: 320px;
 }
 
 .borshch-8-flex-box .blocks p {
@@ -423,9 +415,25 @@ section {
    color: #4c4c4c;
 }
 
+/* 
 
+.item-1-inner {
+   max-width: 390px;
+   min-width: 390px;
+   min-height: 390px;
+   max-height: 390px;
+   border-radius: 50%;
+   background-color: #F25570;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 35px;
+}
 
-
+.item-1-inner img {
+   width: 100%;
+   height: 100%;
+} */
 
 
 
@@ -439,12 +447,12 @@ section {
    }
 
    .header-hidden-menu i {
-      font-size: 1.3em;
+      font-size: 1.8em;
    }
 
    .logo-and-hidden-menu {
       display: flex;
-      width: 10%;
+      width: 19%;
       justify-content: space-between;
       align-items: center;
    }
@@ -453,40 +461,23 @@ section {
       display: none;
    }
 
-   .container {
-      padding-left: 25px;
-      padding-right: 25px;
-      box-sizing: border-box;
-   }
-
    .borsch-1 {
-      display: flex;
       flex-wrap: wrap;
    }
 
    .section1-text h1 {
-      font-size: 2.9em;
       text-align: center;
    }
 
-   .section1-text h3 {
-      font-size: 1em;
-   }
-
    .button-group {
-      width: 80%;
+      width: 82%;
       justify-content: space-around;
       margin: 0 auto;
    }
 
    .section1-buttons {
-      padding: 35px 55px;
+      padding: 25px 45px;
    }
-
-   .section1-buttons span {
-      font-size: 2em;
-   }
-
 
    .section-1-img {
       width: 100%;
@@ -497,6 +488,90 @@ section {
    .section-1-img img {
       margin-top: 60px;
    }
+
+   .borsch-2 h2 {
+      text-align: center;
+      margin: 0 auto;
+   }
+
+   .working-items img {
+      width: 19%;
+   }
+
+   .section-3-img {
+      display: none;
+   }
+
+   .section-3-text {
+      width: max-content;
+   }
+
+   .borsch-4-divs span {
+      font-size: 28px;
+   }
+
+   .borsch-5 {
+      width: none;
+   }
+
+   .borsch-6 {
+      display: block;
+   }
+
+   .borsch-6-flex-1 {
+      margin: 0 auto;
+      width: 100%;
+   }
+
+   .borsch-6-flex-2 {
+      margin: 0 auto;
+      width: 100%;
+      padding-top: 0;
+   }
+
+   .items div {
+      margin: 0 auto;
+   }
+
+   .reviews-flex-box {
+      display: block;
+   }
+
+   .reviews-flex-box div:first-child {
+      margin-top: 0;
+   }
+
+   .reviews-flex-box div:last-child {
+      margin-bottom: 20px;
+   }
+
+   .reviews-flex-box div {
+      width: 100%;
+      margin-top: 50px;
+      padding: 20px;
+   }
+
+   .arrows {
+      display: none;
+   }
+
+   .borshch-8-flex-box {
+      display: block;
+   }
+
+   .borshch-8-flex-box div {
+      width: 100%;
+      overflow: visible;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+   }
+
+   .borshch-8-flex-box p {
+      width: 70%;
+   }
+
 }
 
 
@@ -508,8 +583,7 @@ section {
 
 @media only screen and (max-width: 678px) {
    .header-hidden-menu i {
-      font-size: 4em;
-      padding-right: 30px;
+      font-size: 2.2em;
    }
 
    .header-logo-2 img {
@@ -517,20 +591,45 @@ section {
    }
 
    .header-logo img {
-      width: 150%;
-      padding-left: 30px;
-   }
-
-   .section1-text h1 {
-      font-size: 3em;
+      width: 110%;
    }
 
    .section1-text h3 {
-      font-size: 1.2em;
       letter-spacing: 2px;
+      text-align: justify;
    }
 
-   .section1-buttons span {
-      font-size: 2.3em;
+   .section1-buttons {
+      padding: 15px;
    }
+
+   .section-1-img {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+   }
+
+   .section-1-img img {
+      max-width: 450px;
+      max-height: 450px;
+   }
+
+   .working-items {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .working-items div {
+      min-width: 380px;
+      margin-top: 50px;
+   }
+
+   .working-items img {
+      width: 14%;
+   }
+
+   .borsch-5-flex-2 {
+      padding: 22px 0px;
+   }
+
 }
