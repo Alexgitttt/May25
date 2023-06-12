@@ -27,12 +27,7 @@ header {
    letter-spacing: 0.4px;
 }
 
-.header-menu {
-   box-sizing: border-box;
-
-}
-
-header .header-menu ul {
+.header-menu ul {
    font-family: "Helvetica Neue", Arial, sans-serif;
    display: flex;
    align-items: center;
@@ -42,6 +37,15 @@ header .header-menu ul {
    padding: 0;
 }
 
+.header-menu a {
+   text-decoration: none;
+}
+
+.header-menu a:hover {
+   color: #f3cd46;
+   transition: 0.3s;
+}
+
 .header-hidden-menu {
    display: none;
 }
@@ -49,8 +53,6 @@ header .header-menu ul {
 section {
    margin: 0 auto;
 }
-
-
 
 .borsch-1 {
    display: flex;
@@ -68,8 +70,8 @@ section {
 .section-1-img {
    min-width: 567px;
    min-height: 567px;
-   /*  */
 }
+
 
 .section-1-img img {
    height: 100%;
@@ -91,19 +93,24 @@ section {
    border: 1px solid ghostwhite;
    padding: 20px 35px;
    letter-spacing: 0.5px;
-}
-
-.section1-buttons span {
    font-size: 1.2em;
 }
 
-.buy_for_youself,
-.buy_for_youself span {
+.section1-buttons:first-child:hover {
+   background-color: #f25570;
+   border: 1px solid #f25570;
+   transition: 0.3s;
+}
+
+.section1-buttons:last-child:hover {
+   background-color: #f25570;
+   border: 1px solid #f25570;
+   color: white;
+   transition: 0.3s;
+}
+
+.buy_for_youself {
    background-color: aliceblue;
-}
-
-.buy_for_youself span {
-   font-size: 1.2em;
    color: black;
 }
 
@@ -226,15 +233,15 @@ section {
    margin: 0;
 }
 
+.borsch-5-p23 {
+   letter-spacing: 0.5px;
+   padding: 5px 0;
+}
+
 .borsch-5-flex {
    display: flex;
    align-items: center;
    justify-content: space-evenly;
-}
-
-.borsch-5-p23 {
-   letter-spacing: 0.5px;
-   padding: 5px 0;
 }
 
 .borsch-5-flex-1 {
@@ -249,6 +256,22 @@ section {
    padding: 12px 0px;
    border: 1px solid white;
    width: 25%;
+}
+
+.borsch-5-flex-1:hover {
+   background-color: #f25570;
+   border: 1px solid #f25570;
+   color: white;
+   transition: 0.3s;
+   cursor: pointer;
+}
+
+.borsch-5-flex-2:hover {
+   background-color: #f25570;
+   border: 1px solid #f25570;
+   color: white;
+   transition: 0.3s;
+   cursor: pointer;
 }
 
 .borsch-6 {
@@ -377,13 +400,17 @@ section {
    border-radius: 50%;
 }
 
+.arrow-1-2:hover {
+   cursor: pointer;
+   background-color: #ea8895;
+   transition: 0.3s;
+}
+
 .arrows i {
    color: #858585;
    font-size: 1.8em;
    opacity: 0.8;
 }
-
-
 
 
 .borsch-8 h1 {
@@ -402,6 +429,11 @@ section {
 .borshch-8-flex-box div {
    width: 30%;
    overflow: hidden;
+}
+
+.imgs-borsch8:hover {
+   cursor: pointer;
+   opacity: 0.9;
 }
 
 .borshch-8-flex-box img {
@@ -600,7 +632,7 @@ section {
    }
 
    .section1-buttons {
-      padding: 15px;
+      padding: 20px;
    }
 
    .section-1-img {
